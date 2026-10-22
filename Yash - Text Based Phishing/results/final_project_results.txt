@@ -1,0 +1,54 @@
+TEXT-BASED PHISHING DETECTION PROJECT
+====================================
+
+Dataset:
+CEAS_08-derived sampled dataset
+
+Total sampled records:
+20,000
+
+Legitimate messages:
+5,000
+
+Phishing/spam-type messages:
+15,000
+
+Model:
+Logistic Regression
+
+Text Feature Extraction:
+TF-IDF
+
+TF-IDF Maximum Features:
+20,000
+
+N-gram Range:
+(1, 2)
+
+Training Records:
+14,000
+
+Validation Records:
+3,000
+
+Held-out Test Records:
+3,000
+
+Validation Accuracy:
+99.17%
+
+Held-out Test Accuracy:
+99.33%
+
+Test Confusion Matrix:
+[[737, 13],
+ [7, 2243]]
+
+Class Labels:
+0 = Legitimate
+1 = Phishing/spam-type
+
+Important Note:
+These results were obtained using a sampled dataset
+derived from CEAS_08. They should not be interpreted
+as guaranteed real-world detection performance.
