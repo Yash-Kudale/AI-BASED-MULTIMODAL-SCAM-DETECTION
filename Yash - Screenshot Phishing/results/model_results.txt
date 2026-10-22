@@ -1,0 +1,50 @@
+
+SCREENSHOT PHISHING DETECTION - MODEL RESULTS
+==============================================
+
+Model:
+MobileNetV2 with Fine-Tuning
+
+Dataset:
+FINAL_DATASET_1_3
+Legitimate: 2064
+Phishing: 6192
+Total: 8256
+
+Post-Hoc Test Subset:
+Legitimate: 206
+Phishing: 619
+Total: 825
+
+Decision Threshold:
+0.60
+
+TEST SUBSET RESULTS
+===================
+Accuracy: 90.06%
+
+Confusion Matrix:
+[[183, 23],
+ [59, 560]]
+
+LEGITIMATE:
+Precision: 75.62%
+Recall: 88.83%
+F1-Score: 81.70%
+
+PHISHING:
+Precision: 96.05%
+Recall: 90.47%
+F1-Score: 93.18%
+
+ROC-AUC:
+0.9641
+
+Best Validation Accuracy:
+87.95%
+
+Note:
+The 825-image test subset was created after model training
+from FINAL_DATASET_1_3. Therefore, it should be treated as
+a post-hoc diagnostic test subset rather than a truly
+independent unseen test set.

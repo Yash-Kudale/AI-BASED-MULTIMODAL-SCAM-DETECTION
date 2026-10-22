@@ -1,0 +1,57 @@
+
+SCREENSHOT PHISHING DETECTION
+=============================
+
+Dataset:
+FINAL_DATASET_1_3
+
+Dataset Size:
+8,256 images
+
+Legitimate:
+2,064 images
+
+Phishing:
+6,192 images
+
+Model:
+MobileNetV2 + Fine-Tuning
+
+Best Validation Accuracy:
+87.95%
+
+Post-Hoc Test-Subset Accuracy:
+90.06%
+
+Legitimate Precision:
+75.62%
+
+Legitimate Recall:
+88.83%
+
+Legitimate F1-Score:
+81.70%
+
+Phishing Precision:
+96.05%
+
+Phishing Recall:
+90.47%
+
+Phishing F1-Score:
+93.18%
+
+ROC-AUC:
+0.9641
+
+Decision Threshold:
+0.60
+
+Final Model:
+mobilenetv2_final_finetuned.keras
+
+Important Note:
+The 825-image test subset was created after model
+training from FINAL_DATASET_1_3. Therefore it is a
+post-hoc diagnostic test subset and should not be
+described as a completely independent unseen test set.
